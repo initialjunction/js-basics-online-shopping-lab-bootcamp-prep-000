@@ -10,7 +10,10 @@ function setCart(c) {
 }
 
 function addToCart(item) {
- // write your code here
+  var cart = {
+    itemName: name,
+    itemPrice: price;
+  }
 }
 
 function viewCart() {
