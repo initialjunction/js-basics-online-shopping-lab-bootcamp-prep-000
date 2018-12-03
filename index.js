@@ -9,12 +9,19 @@ function setCart(c) {
   return cart;
 }
 
-function addToCart(item) {
- // write your code here
+function addToCart(name) {
+  var item = { itemName: name, itemPrice: ((Math.floor(Math.random() * (101 - 1)) + 1))};
+  cart.push(item);
+  return `${name} has been added to your cart.`
 }
 
 function viewCart() {
-  // write your code here
+  if (cart.length > 0) {
+    for (var itemName in cart)
+    return "In your cart, you have"
+  } else {
+    return "Your shopping cart is empty.";
+  }
 }
 
 function total() {
